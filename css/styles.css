@@ -94,8 +94,8 @@ img {
 
 @media only screen and (max-width: 767.98px) {
   .header-list {
-  display: none;
-}
+    display: none;
+  }
 }
 
 .logo {
@@ -123,17 +123,23 @@ img {
   color: #404bbf;
 }
 
-.mobile-menu {
-  border: none;
-  background-color: transparent;
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  
-}
+@media only screen and (max-width: 767.98px) {
+  .mobile-menu {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
 
-.menu-icon {
-  fill: #2f2f37;
+  .menu-icon {
+    fill: #2f2f37;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .nav-link {
@@ -238,7 +244,7 @@ img {
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
- .hero-section {
+  .hero-section {
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
